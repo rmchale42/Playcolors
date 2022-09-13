@@ -1,6 +1,6 @@
  <script>
   
-  
+  //create variables to represent colors used
   const thebut = document.getElementById("memory");
   const red = "red";
   const blue = "blue";
@@ -13,6 +13,7 @@
   const pink = "pink";
   const brown = "brown";
   
+  //creating variables for the counters
   let redcount = 0;
   let bluecount = 0;
   let greencount = 0;
@@ -24,10 +25,12 @@
   let pinkcount = 0;
   let browncount = 0;
 
+  
   function getValue() {
   return document.getElementById("mySelect").value
 }
 
+  //Function to change the number of colors displayed based on amount chosen from dropdown menu
   function changeNumbers(selectednum) {
 
   let x = selectednum;
@@ -229,7 +232,7 @@
   document.getElementById(emptysquare).style.backgroundColor = stored;
 }
 
-
+  //function to add to the counter for the color used
   function addToCount() {  
   const buttonColor = thebut.style.backgroundColor;
   
